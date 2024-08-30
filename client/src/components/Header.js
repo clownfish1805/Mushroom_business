@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,18 +13,58 @@ const Header = () => {
             />
             Mushymate
           </a>
-          <nav class="nav">
-            <a href="/">Dashboard</a>
-            <a href="/Order">Sales</a>
-            <a href="/Inventory">Inventory</a>
-            <a href="/Users">Users</a>
-            <li className="dropdown">
-              <a href="/">Admin</a>
+          <nav className="nav">
+            <a onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
+              Dashboard
+            </a>
+            <a onClick={() => navigate("/Order")} style={{ cursor: "pointer" }}>
+              Sales
+            </a>
+            <a
+              onClick={() => navigate("/Inventory")}
+              style={{ cursor: "pointer" }}
+            >
+              Inventory
+            </a>
+            <a onClick={() => navigate("/Users")} style={{ cursor: "pointer" }}>
+              Users
+            </a>
+
+            <li className="dropdown" style={{ display: "inline-block" }}>
+              <a style={{ cursor: "pointer" }}>Admin</a>
               <ul className="dropdown-content">
-                <a href="/AddProduct">Add Products</a>
-                <a href="/AddDelivery">Add Delivery Person</a>
-                <a href="/Complaint">Complaints</a>
-                <a href="/DeliveryDetails">Delivered Details</a>
+                <li>
+                  <a
+                    onClick={() => navigate("/AddProduct")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Add Products
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => navigate("/AddDelivery")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Add Delivery Person
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => navigate("/Complaint")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Complaints
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => navigate("/DeliveryDetails")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Delivered Details
+                  </a>
+                </li>
               </ul>
             </li>
           </nav>
