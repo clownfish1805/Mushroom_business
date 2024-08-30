@@ -20,7 +20,9 @@ Developed and implemented a real-time user-friendly website for Mushroom product
 
 ## Tech Stack
 
-- React
+- **Frontend** : React.js
+- **Backend** : Node.js , MongoDB atlas , Express.js
+- **Middleware** :  multer,cors,express.json
 
 ## Steps to Run
 
