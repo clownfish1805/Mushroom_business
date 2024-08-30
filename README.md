@@ -29,5 +29,5 @@ Developed and implemented a real-time user-friendly website for Mushroom product
 1. Clone the repository<br>
 2. Navigate to the project directory<br>
 3. Install dependencies<br>
-4. Start the development server with command **npm start**<br>
+4. Start the development server with command **npm start** for client side and **node index.js** for server side.
 
