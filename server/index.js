@@ -55,6 +55,10 @@ app.get("/deliveryDetails", async (req, res) => {
   res.json({ success: true, data: data });
 });
 
+app.get("/", async (req, res) => {
+  res.send("Welcome to the Mushymate Backend API");
+});
+
 //read
 app.get("/complaints", async (req, res) => {
   const data = await Complaint.find({});
