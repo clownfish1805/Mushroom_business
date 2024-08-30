@@ -40,7 +40,7 @@ const Footer = () => {
             <li>
               <a href="tel:+1234567890" target="_blank">
                 <FaPhone style={{ fontSize: "20px", marginRight: "5px" }} />
-                Phone: +1 (234) 567-890
+                Phone: +91 82xx499xx
               </a>
             </li>
             <li>

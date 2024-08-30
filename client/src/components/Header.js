@@ -34,7 +34,14 @@ const Header = () => {
 
             <li className="dropdown" style={{ display: "inline-block" }}>
               <a style={{ cursor: "pointer" }}>Admin</a>
-              <ul className="dropdown-content">
+              <ul
+                className="dropdown-content"
+                style={{
+                  listStyleType: "none", // Removes bullets
+                  padding: 0, // Removes padding
+                  margin: 0, // Removes margin
+                }}
+              >
                 <li>
                   <a
                     onClick={() => navigate("/AddProduct")}
