@@ -5,7 +5,7 @@ import { FormTable2 } from "./components/FormTable2";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 
 function AddDelivery() {
   const [addSection, setAddSection] = useState(false);

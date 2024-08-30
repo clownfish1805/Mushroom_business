@@ -6,7 +6,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 
 function App() {
   const [dataList, setDataList] = useState([]);
